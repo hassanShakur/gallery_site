@@ -99,7 +99,6 @@ article .image img {
 .open > :first-child img {
   height: 100%;
 }
-
 .loader {
   background-color: black;
   color: white;
@@ -116,8 +115,8 @@ article .image img {
 
 .loader .circle {
   letter-spacing: 0.16em;
-  width: 20vw;
-  height: 20vw;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   position: absolute;
   animation: load 0.8s linear infinite forwards;
@@ -138,8 +137,8 @@ article .image img {
   content: '';
   top: 0;
   left: 0;
-  width: 20vw;
-  height: 20vw;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
@@ -153,7 +152,6 @@ article .image img {
 .vanish {
   opacity: 0;
   z-index: -99;
-  transition: all 0.3s ease-in-out;
 }
 
 @keyframes load {
@@ -180,5 +178,17 @@ article .image img {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1100px) {
+  .loader .circle::before,
+  .loader .circle {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .loader span {
+    font-size: 2vw;
   }
 }
