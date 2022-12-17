@@ -25,18 +25,6 @@ const images = [
         name: 'City 6',
         src: './images/city/city-6.jpg',
       },
-      {
-        name: 'City 7',
-        src: './images/city/city-7.jpg',
-      },
-      {
-        name: 'City 8',
-        src: './images/city/city-8.jpg',
-      },
-      {
-        name: 'City 9',
-        src: './images/city/city-9.jpg',
-      },
     ],
 
     home: [
@@ -64,27 +52,20 @@ const images = [
         name: 'home 6',
         src: './images/home/home-6.jpg',
       },
-      {
-        name: 'home 7',
-        src: './images/home/home-7.jpg',
-      },
-      {
-        name: 'home 8',
-        src: './images/home/home-8.jpg',
-      },
-      {
-        name: 'home 9',
-        src: './images/home/home-9.jpg',
-      },
     ],
   },
 ];
 
 const cityArticle = getElement('.city-images');
 const homeArticle = getElement('.home-images');
-console.log(cityArticle.innerHTML);
+const preLoader = getElement('.loader');
 
+window.addEventListener('load', vanishLoader);
 window.addEventListener('DOMContentLoaded', loadImages);
+
+function vanishLoader() {
+  preLoader.classList.add('vanish');
+}
 
 function loadImages() {
   for (let i = 0; i < images.length; i++) {
