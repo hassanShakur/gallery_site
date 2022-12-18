@@ -195,7 +195,7 @@ Modal
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 3rem;
+  font-size: 2vw;
   color: white;
   background: transparent;
   border-color: transparent;
@@ -204,19 +204,19 @@ Modal
 .next-btn,
 .prev-btn {
   position: absolute;
-  top: 10rem;
-  transform: translateY(-50%);
+  top: 35vh;
   background: transparent;
-  font-size: 2rem;
+  font-size: 2vw;
   color: white;
   border-color: transparent;
   cursor: pointer;
 }
+
 .prev-btn {
-  left: -2.5rem;
+  left: -5vw;
 }
 .next-btn {
-  right: -2.5rem;
+  right: -5vw;
 }
 @media screen and (min-width: 768px) {
   .prev-btn {
