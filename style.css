@@ -196,7 +196,7 @@ Modal
   top: 1rem;
   right: 1rem;
   font-size: 3rem;
-  color: var(--clr-white);
+  color: white;
   background: transparent;
   border-color: transparent;
   cursor: pointer;
@@ -208,7 +208,7 @@ Modal
   transform: translateY(-50%);
   background: transparent;
   font-size: 2rem;
-  color: var(--clr-white);
+  color: white;
   border-color: transparent;
   cursor: pointer;
 }
